@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+        body {
+            font-family: 仿宋;
+            color: black;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #1c4f80;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav {
+            background-color: #d0e7f9;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #e6f2ff;
+            gap: 20px;
+        }
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .right-section {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: #bdd7e2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .personal-info p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .hobbies {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .hobby-item {
+            text-align: center;
+        }
+        .hobby-pic {
+            width: 60px;
+            height: 60px;
+            background-color: #bdd7e2;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>欢迎来到我的个人主页</h1>
+    </div>
+    <div class="nav">
+        <a href="#">我的首页</a>
+        <a href="#">学习经历</a>
+        <a href="#">实践经历</a>
+        <a href="#">擅长技能</a>
+        <a href="#">我的日记</a>
+        <a href="#">留言板</a>
+    </div>
+    <div class="container">
+        <div class="left-section">
+            <div class="profile-pic">照片</div>
+            <div class="personal-info">
+                <p>姓名: zzzYf</p>
+                <p>性别: 女</p>
+                <p>年龄: 19</p>
+                <p>学校: 山东吃饭大学</p>
+                <p>联系方式: 190xxxxxxxx</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>个人简介</h2>
+            <p>本人性格开朗，为人大方谦和，做事勤奋踏实，吃苦耐劳，善于发现和解决问题，执行力强大，不拖延，思维活跃，表达能力强，逻辑清晰，是一名优秀大学生。</p>
+            <h2>兴趣爱好</h2>
+            <div class="hobbies">
+                <div class="hobby-item">
+                    <div class="hobby-pic"></div>
+                    <p>旅行</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-pic"></div>
+                    <p>阅读</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-pic"></div>
+                    <p>运动</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-pic"></div>
+                    <p>美食</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
