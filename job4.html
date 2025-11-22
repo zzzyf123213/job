@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手工书皮制作工作坊 · Handmade Book Cover</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background: linear-gradient(135deg, #e6f3ff, #c9e5ff);
+            color: #3b3025;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+		.page {
+		display: inline-block;
+		background-color: #E6F3FF; /* 天空浅蓝 */;
+		box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+		text-align: left;
+		max-width: 720px;
+		}
+
+        /* 并集选择器 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #5b4636;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            text-align: center;
+            border-bottom: 2px solid #8B4513;
+            padding-bottom: 10px;
+        }
+
+        /* ID选择器 */
+        p#intro {
+            font-weight: bold;
+            color: #8B0000;
+            font-size: 1.1em;
+            background-color: #fff9e6;
+            padding: 10px;
+            border-left: 4px solid #8B0000;
+        }
+
+        /* 后代选择器 */
+        div table a {
+            color: #8B4513;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* 链接伪类 */
+        a:link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: #663399;
+        }
+        
+        a:hover {
+            color: #ff6600;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: #cc0000;
+        }
+
+        /* 带类名的链接 */
+        a.red {
+            color: #ff0000;
+            font-weight: bold;
+        }
+        
+        a.blue {
+            color: #0000ff;
+            font-weight: bold;
+        }
+
+        /* 伪元素 */
+        p::first-letter {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #8B4513;
+        }
+        
+        div::first-line {
+            font-weight: bold;
+            color: #8B4513;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        
+        th, td {
+            border: 1px solid #8B4513;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f5e6d3;
+        }
+        
+        /* 公告区样式 */
+        .notice {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border: 1px dashed #8B4513;
+            margin-top: 20px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            border-bottom: 1px solid #8B4513;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- 顶部标题区 -->
+        <div class="section">
+            <h1>手工书皮制作工作坊 · Handmade Book Cover</h1>
+        </div>
+        
+        <!-- 活动介绍区 -->
+        <div class="section">
+            <h2 id="intro" class="section-title">活动介绍</h2>
+            <p>在这个数字化的时代，手工制作书籍封面的craft不仅是一种技能，更是一种艺术表达。通过亲手制作书皮，我们可以为心爱的书籍增添独特的个性与温度。</p>
+            <p>本次工作坊将带领参与者学习传统与现代的书皮制作技巧，从材料选择到装饰设计，让每一本书都成为独一无二的艺术品。</p>
+            <p id="intro">重要提示：本次活动名额有限，请提前报名以确保参与机会。</p>
+        </div>
+        
+        <!-- 活动报名信息表格区 -->
+        <div class="section">
+            <h3 class="section-title">活动详情与材料</h3>
+            <table>
+                <tr>
+                    <th>材料名称</th>
+                    <th>用途</th>
+                    <th>提供方式</th>
+                </tr>
+                <tr>
+                    <td>牛皮纸</td>
+                    <td>书皮基础材料</td>
+                    <td>工作坊提供</td>
+                </tr>
+                <tr>
+                    <td>装饰纸</td>
+                    <td>书皮装饰</td>
+                    <td>工作坊提供</td>
+                </tr>
+                <tr>
+                    <td>裁纸刀</td>
+                    <td>裁剪材料</td>
+                    <td>工作坊提供</td>
+                </tr>
+                <tr>
+                    <td>胶水</td>
+                    <td>粘贴固定</td>
+                    <td>工作坊提供</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- 页面链接区 -->
+        <div class="section">
+            <div>
+                <a href="https://hongchenwusdnu.github.io/bookstore/job4.html" class="red">查看往期活动照片</a><br>
+                <a href="https://zzzyf123213.github.io/job/job3.html" class="blue">在线咨询活动详情</a>
+            </div>
+        </div>
+        
+        <!-- 底部公告区 -->
+        <div class="notice">
+            <p>公告：工作坊时间调整为每周六下午2点至5点<br>地点不变，仍在图书馆三楼创意空间</p>
+            <p>公告：新增材料包预订服务<br>参与者可提前预订个性化材料包<br>预订截止时间为活动前三天</p>
+            <p>公告：优秀作品展示计划启动<br>每月评选最佳手工书皮作品<br>获奖作品将在图书馆大厅展出</p>
+        </div>
+    </div>
+</body>
+</html>
